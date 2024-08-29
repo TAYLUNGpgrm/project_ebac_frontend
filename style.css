@@ -1,0 +1,115 @@
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+h1.navbar-brand {
+    transition: transform 0.3s ease;
+    color: rgb(228, 228, 228);
+    font-size: 7vh;
+    cursor: pointer;
+}
+
+h1.navbar-brand:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do H1 em 20% */
+    color: rgb(255, 42, 0);
+}
+.navbar-brand {
+    background-color: black;
+}
+.navbar-brand:hover {
+    background-color: rgba(255, 0, 0, 0.128);
+    border-radius: 15vh;
+}
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: rgb(228, 228, 228);
+}
+.nav .nav-link:hover {
+    color: rgb(255, 42, 0);
+}
+
+.navbar-toggler {
+   background-color: rgb(0, 0, 0);
+   border-color: rgb(228, 228, 228);
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(228, 228, 228);
+    border-radius: 50px;
+}
+
+.section-title span {
+    color: rgb(255, 42, 0);
+}
+
+.imgs {
+    border-radius: 2vh;
+    max-width: 45vh;
+}
+
+#sobre-o-restaurante, #cardapio {
+    background-color: rgb(228, 228, 228);
+}
+
+.panda {
+    color: rgb(255, 42, 0);
+}
+.panda:hover {
+    color: rgb(228, 228, 228);
+}
+
+.text-colored {
+    color: rgb(255, 42, 0);
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: rgb(255, 42, 0);
+    color: rgb(228, 228, 228);
+}
+
+.nav-cardapio .nav-link:hover {
+    color: rgb(255, 42, 0);
+}
+
+#transicao {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* Estilo adicional para visualização */
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+    margin-top: 20px;
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#ajuda {
+    background-color: rgb(24, 24, 24);
+}
+
+.form-label, .pro {
+    color: rgb(250, 250, 250)
+}   
+
+.clica {
+    cursor: pointer;
+}
+
+.form-control {
+    background-color: rgba(255, 0, 0, 0.306);
+    border: none;
+}
+
+.limite {
+    max-width: 70%;
+}
