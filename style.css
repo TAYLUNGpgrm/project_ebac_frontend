@@ -54,10 +54,12 @@ h1.navbar-brand:hover {
     max-width: 45vh;
 }
 
-#sobre-o-restaurante, #cardapio {
-    background-color: rgb(228, 228, 228);
+#sobre-o-restaurante {
+    background-color: rgb(223, 223, 223);
 }
-
+#cardapio{
+    background-color: rgb(255, 237, 221);
+}
 .panda {
     color: rgb(255, 42, 0);
 }
@@ -71,7 +73,7 @@ h1.navbar-brand:hover {
 
 .nav-cardapio .nav-link.active {
     background-color: rgb(255, 42, 0);
-    color: rgb(228, 228, 228);
+    color: rgb(255, 227, 143);
 }
 
 .nav-cardapio .nav-link:hover {
@@ -169,4 +171,35 @@ header {
     border-radius: 10px; /* Borda arredondada para efeito estético */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o slide */
     border: 1px solid #ddd; /* Borda para evidenciar as bordas */
+}
+
+
+/* Estilo para o contêiner principal */
+.container {
+    max-width: 1200px; /* Largura máxima padrão para desktops */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 0 20px; /* Espaçamento interno nas laterais */
+}
+
+/* Ajuste para telas de 1920px ou maiores */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px; /* Aumenta a largura máxima em telas grandes */
+    
+    }
+}
+
+/* Ajuste para telas médias (ex.: laptops menores e tablets) */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 95%; /* Usa uma porcentagem para manter espaçamento nas laterais */
+    }
+}
+
+/* Ajuste para telas pequenas (ex.: tablets em modo retrato e celulares) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Usa toda a largura da tela */
+        padding: 0 10px; /* Reduz o espaçamento interno para telas pequenas */
+    }
 }
