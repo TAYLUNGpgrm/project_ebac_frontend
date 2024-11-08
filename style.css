@@ -1,4 +1,4 @@
-
+ 
 .navbar {
     background-color: rgb(0, 0, 0);
 }
@@ -120,3 +120,53 @@ ul {
     }
 }
 
+.ates {
+    border-radius: 12px;
+}
+
+#cabecalho {
+    background-color: rgb(255, 255, 255);
+}
+
+
+#arte {
+    padding: 20px;
+    max-width: 20%;
+}
+
+
+
+header {
+    padding: 10px 20px; /* Ajuste conforme necessário */
+}
+
+
+@media (max-width: 768px) {
+    .arte {
+        width: 120px;
+    }
+
+    .carousel {
+        max-height: 400px;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.3s ease; /* Transição suave usando transform */
+    z-index: 1000;
+    background-color: #000; /* Adicione a cor de fundo ou qualquer outro estilo que o cabeçalho deva ter */
+}
+
+.carousel {
+    width: 80%; /* Define a largura do slide - ajuste conforme necessário */
+    max-width: 900px; /* Limita a largura máxima */
+    height: 500px; /* Define uma altura fixa para o slide */
+    margin: 20px auto; /* Centraliza o slide e adiciona um espaçamento superior e inferior */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassar as bordas */
+    border-radius: 10px; /* Borda arredondada para efeito estético */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o slide */
+    border: 1px solid #ddd; /* Borda para evidenciar as bordas */
+}
