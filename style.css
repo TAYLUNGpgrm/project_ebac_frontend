@@ -46,7 +46,7 @@ h1.navbar-brand:hover {
 }
 
 .section-title span {
-    color: rgb(255, 42, 0);
+    color: rgb(255, 248, 216);
 }
 
 .imgs {
@@ -55,29 +55,24 @@ h1.navbar-brand:hover {
 }
 
 #sobre-o-restaurante {
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(188, 188, 188);
 }
 #cardapio{
-    background-color: rgb(255, 237, 221);
-}
-.panda {
-    color: rgb(255, 42, 0);
-}
-.panda:hover {
-    color: rgb(228, 228, 228);
+    background-color: rgb(153, 153, 153);
 }
 
+
 .text-colored {
-    color: rgb(255, 42, 0);
+    color: rgb(0, 0, 0);
 }
 
 .nav-cardapio .nav-link.active {
-    background-color: rgb(255, 42, 0);
-    color: rgb(255, 227, 143);
+    background-color: rgba(81, 81, 81, 0.673);
+    color: rgb(223, 223, 223);
 }
 
 .nav-cardapio .nav-link:hover {
-    color: rgb(255, 42, 0);
+    color: rgb(203, 203, 203);
 }
 
 #transicao {
@@ -203,3 +198,27 @@ header {
         padding: 0 10px; /* Reduz o espaçamento interno para telas pequenas */
     }
 }
+
+.image-box {
+    border: 2px solid #ccc; /* Borda ao redor da caixa */
+    padding: 15px;
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #9a9a9a; /* Fundo branco dentro da caixa */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.card {
+    transition: transform 0.2s ease-in-out; /* Suavização ao passar o mouse */
+    cursor: pointer; /* Mudança de cursor para indicar clicável */
+  }
+
+  .card:active {
+    transform: scale(0.95); /* Suavização ao clicar */
+  }
+
+  .card:hover {
+    transform: scale(1.03); /* Suavização ao passar o mouse */
+  }
