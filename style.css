@@ -1,4 +1,46 @@
- 
+body {
+    border: 5px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9a9e, #fad0c4);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
+.container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+}
+
+body {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+
+.box {
+    border: 2px solid transparent;
+    /* Borda inicial invisível */
+    padding: 10px;
+    /* Espaço interno, opcional */
+    transition: border 0.1s ease-in-out;
+    /* Animação suave na borda */
+}
+
+.box:hover {
+    border: 5px solid #7e7e7e;
+    /* Cor da borda ao passar o mouse */
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 .navbar {
     background-color: rgb(0, 0, 0);
 }
@@ -7,6 +49,7 @@
     background-color: rgb(228, 228, 228);
     color: black;
 }
+
 h1.navbar-brand {
     transition: transform 0.3s ease;
     color: rgb(228, 228, 228);
@@ -15,29 +58,34 @@ h1.navbar-brand {
 }
 
 h1.navbar-brand:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do H1 em 20% */
+    transform: scale(1.1);
+    /* Aumenta o tamanho do H1 em 20% */
     color: rgb(255, 42, 0);
 }
+
 .navbar-brand {
     background-color: black;
 }
+
 .navbar-brand:hover {
     background-color: rgba(255, 0, 0, 0.128);
     border-radius: 15vh;
 }
+
 #cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover,
 .nav-cardapio .nav-link.active:hover {
     color: rgb(228, 228, 228);
 }
+
 .nav .nav-link:hover {
     color: rgb(255, 42, 0);
 }
 
 .navbar-toggler {
-   background-color: rgb(0, 0, 0);
-   border-color: rgb(228, 228, 228);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(228, 228, 228);
 }
 
 .navbar-toggler-icon {
@@ -57,7 +105,8 @@ h1.navbar-brand:hover {
 #sobre-o-restaurante {
     background-color: rgb(188, 188, 188);
 }
-#cardapio{
+
+#cardapio {
     background-color: rgb(153, 153, 153);
 }
 
@@ -94,9 +143,10 @@ ul {
     background-color: rgb(99, 99, 99);
 }
 
-.form-label, .pro {
+.form-label,
+.pro {
     color: rgb(250, 250, 250)
-}   
+}
 
 .clica {
     cursor: pointer;
@@ -128,13 +178,14 @@ ul {
 
 #arte {
     padding: 20px;
-    max-width: 20%;
+    max-width: 30%;
 }
 
 
 
 header {
-    padding: 10px 20px; /* Ajuste conforme necessário */
+    padding: 10px 20px;
+    /* Ajuste conforme necessário */
 }
 
 
@@ -152,78 +203,103 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    transition: transform 0.3s ease; /* Transição suave usando transform */
+    transition: transform 0.3s ease;
+    /* Transição suave usando transform */
     z-index: 1000;
-    background-color: #000; /* Adicione a cor de fundo ou qualquer outro estilo que o cabeçalho deva ter */
+    background-color: #000;
+    /* Adicione a cor de fundo ou qualquer outro estilo que o cabeçalho deva ter */
 }
 
 .carousel {
-    width: 80%; /* Define a largura do slide - ajuste conforme necessário */
-    max-width: 900px; /* Limita a largura máxima */
-    height: 500px; /* Define uma altura fixa para o slide */
-    margin: 20px auto; /* Centraliza o slide e adiciona um espaçamento superior e inferior */
-    overflow: hidden; /* Oculta o conteúdo que ultrapassar as bordas */
-    border-radius: 10px; /* Borda arredondada para efeito estético */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o slide */
-    border: 1px solid #ddd; /* Borda para evidenciar as bordas */
+    width: 80%;
+    /* Define a largura do slide - ajuste conforme necessário */
+    max-width: 900px;
+    /* Limita a largura máxima */
+    height: 500px;
+    /* Define uma altura fixa para o slide */
+    margin: 20px auto;
+    /* Centraliza o slide e adiciona um espaçamento superior e inferior */
+    overflow: hidden;
+    /* Oculta o conteúdo que ultrapassar as bordas */
+    border-radius: 10px;
+    /* Borda arredondada para efeito estético */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destacar o slide */
+    border: 1px solid #ddd;
+    /* Borda para evidenciar as bordas */
 }
 
 
 /* Estilo para o contêiner principal */
 .container {
-    max-width: 1200px; /* Largura máxima padrão para desktops */
-    margin: 0 auto; /* Centraliza o contêiner */
-    padding: 0 20px; /* Espaçamento interno nas laterais */
+    max-width: 1200px;
+    /* Largura máxima padrão para desktops */
+    margin: 0 auto;
+    /* Centraliza o contêiner */
+    padding: 0 20px;
+    /* Espaçamento interno nas laterais */
 }
 
 /* Ajuste para telas de 1920px ou maiores */
 @media (min-width: 1920px) {
     .container {
-        max-width: 1400px; /* Aumenta a largura máxima em telas grandes */
-        
+        max-width: 1400px;
+        /* Aumenta a largura máxima em telas grandes */
+
     }
 }
 
 /* Ajuste para telas médias (ex.: laptops menores e tablets) */
 @media (max-width: 1280px) {
     .container {
-        max-width: 95%; /* Usa uma porcentagem para manter espaçamento nas laterais */
+        max-width: 95%;
+        /* Usa uma porcentagem para manter espaçamento nas laterais */
     }
 }
 
 /* Ajuste para telas pequenas (ex.: tablets em modo retrato e celulares) */
 @media (max-width: 768px) {
     .container {
-        max-width: 100%; /* Usa toda a largura da tela */
-        padding: 0 10px; /* Reduz o espaçamento interno para telas pequenas */
+        max-width: 100%;
+        /* Usa toda a largura da tela */
+        padding: 0 10px;
+        /* Reduz o espaçamento interno para telas pequenas */
     }
 }
 
 .image-box {
-    border: 2px solid #ccc; /* Borda ao redor da caixa */
+    border: 2px solid #ccc;
+    /* Borda ao redor da caixa */
     padding: 15px;
-    border-radius: 10px; /* Bordas arredondadas */
-    background-color: #9a9a9a; /* Fundo branco dentro da caixa */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    background-color: #9a9a9a;
+    /* Fundo branco dentro da caixa */
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
 }
 
 .card {
-    transition: transform 0.2s ease-in-out; /* Suavização ao passar o mouse */
-    cursor: pointer; /* Mudança de cursor para indicar clicável */
-  }
+    transition: transform 0.2s ease-in-out;
+    /* Suavização ao passar o mouse */
+    cursor: pointer;
+    /* Mudança de cursor para indicar clicável */
+}
 
-  .card:active {
-    transform: scale(0.95); /* Suavização ao clicar */
-  }
+.card:active {
+    transform: scale(0.95);
+    /* Suavização ao clicar */
+}
 
-  .card:hover {
-    transform: scale(1.03); /* Suavização ao passar o mouse */
-  }
+.card:hover {
+    transform: scale(1.03);
+    /* Suavização ao passar o mouse */
+}
 
-  .footer {
+.footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -241,4 +317,3 @@ header {
     width: 50px;
     height: auto;
 }
-  
