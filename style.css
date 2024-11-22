@@ -3,6 +3,7 @@ body {
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9a9e, #fad0c4);
     background-origin: border-box;
     background-clip: content-box, border-box;
+<<<<<<< HEAD
 }
 
 
@@ -33,7 +34,35 @@ body {
     border-radius: 10px;
 }
 
+======
+ 
 
+  
+  .container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  body {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  
+  .box {
+    border: 2px solid transparent; /* Borda inicial invisível */
+    padding: 10px; /* Espaço interno, opcional */
+    transition: border 0.1s ease-in-out; /* Animação suave na borda */
+}
+
+.box:hover {
+    border: 5px solid #7e7e7e; /* Cor da borda ao passar o mouse */
+    border-radius: 10px;
+}
+
+  
+>>>>>>> 1ae2fe1cb57cdcf2f6662321a305bea3f4ec3151
 
 
 
