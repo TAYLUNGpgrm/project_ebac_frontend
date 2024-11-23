@@ -219,6 +219,7 @@ header {
         height: 280px;
     }
 }
+
 .image-box {
     border: 2px solid #ccc;
     padding: 15px;
@@ -263,12 +264,18 @@ header {
 }
 
 header {
-    position: fixed; /* Fixa o cabeçalho no topo */
-    top: 0; /* Fixa no topo da tela */
+    position: fixed;
+    /* Fixa o cabeçalho no topo */
+    top: 0;
+    /* Fixa no topo da tela */
     left: 0;
-    width: 100%; /* Ocupa toda a largura */
-    background-color: #333; /* Cor de fundo da barra */
+    width: 100%;
+    /* Ocupa toda a largura */
+    background-color: #333;
+    /* Cor de fundo da barra */
     color: white;
-    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
-    transition: transform 0.3s ease-in-out; /* Transição suave */
+    z-index: 1000;
+    /* Garante que o cabeçalho fique sobre outros elementos */
+    transition: transform 0.3s ease-in-out;
+    /* Transição suave */
 }
