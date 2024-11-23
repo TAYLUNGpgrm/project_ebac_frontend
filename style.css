@@ -207,8 +207,8 @@ header {
         padding: 0 10px;
     }
 
-    .arte {
-        width: 120px;
+    #arte {
+        width: 100%;
     }
 
     .carousel {
