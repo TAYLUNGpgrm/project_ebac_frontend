@@ -3,72 +3,37 @@ body {
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9a9e, #fad0c4);
     background-origin: border-box;
     background-clip: content-box, border-box;
-<<<<<<< HEAD
-}
-
-
-.container {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 20px;
-}
-
-body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     margin: 20px;
 }
 
+nav a {
+    color: #000;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+    color: #333;
+}
+
+.container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 20px 20px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
 
 .box {
     border: 2px solid transparent;
-    /* Borda inicial invisível */
     padding: 10px;
-    /* Espaço interno, opcional */
     transition: border 0.1s ease-in-out;
-    /* Animação suave na borda */
 }
 
 .box:hover {
     border: 5px solid #7e7e7e;
-    /* Cor da borda ao passar o mouse */
     border-radius: 10px;
 }
-
-======
- 
-
-  
-  .container {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 20px;
-  }
-  
-  body {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  
-  .box {
-    border: 2px solid transparent; /* Borda inicial invisível */
-    padding: 10px; /* Espaço interno, opcional */
-    transition: border 0.1s ease-in-out; /* Animação suave na borda */
-}
-
-.box:hover {
-    border: 5px solid #7e7e7e; /* Cor da borda ao passar o mouse */
-    border-radius: 10px;
-}
-
-  
->>>>>>> 1ae2fe1cb57cdcf2f6662321a305bea3f4ec3151
-
-
-
-
-
-
 
 .navbar {
     background-color: rgb(0, 0, 0);
@@ -88,7 +53,6 @@ h1.navbar-brand {
 
 h1.navbar-brand:hover {
     transform: scale(1.1);
-    /* Aumenta o tamanho do H1 em 20% */
     color: rgb(255, 42, 0);
 }
 
@@ -139,7 +103,6 @@ h1.navbar-brand:hover {
     background-color: rgb(153, 153, 153);
 }
 
-
 .text-colored {
     color: rgb(0, 0, 0);
 }
@@ -156,7 +119,6 @@ h1.navbar-brand:hover {
 #transicao {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    /* Estilo adicional para visualização */
     width: 300px;
     height: 200px;
     background-color: lightblue;
@@ -174,7 +136,7 @@ ul {
 
 .form-label,
 .pro {
-    color: rgb(250, 250, 250)
+    color: rgb(250, 250, 250);
 }
 
 .clica {
@@ -190,12 +152,6 @@ ul {
     max-width: 70%;
 }
 
-@media (max-width: 767px) {
-    .carousel-item img {
-        height: 280px;
-    }
-}
-
 .ates {
     border-radius: 12px;
 }
@@ -204,77 +160,36 @@ ul {
     background-color: rgb(255, 255, 255);
 }
 
-
 #arte {
     padding: 20px;
     max-width: 30%;
 }
 
-
-
 header {
     padding: 10px 20px;
-    /* Ajuste conforme necessário */
-}
-
-
-@media (max-width: 768px) {
-    .arte {
-        width: 120px;
-    }
-
-    .carousel {
-        max-height: 400px;
-    }
-}
-
-header {
     position: fixed;
     top: 0;
     width: 100%;
     transition: transform 0.3s ease;
-    /* Transição suave usando transform */
     z-index: 1000;
     background-color: #000;
-    /* Adicione a cor de fundo ou qualquer outro estilo que o cabeçalho deva ter */
 }
 
 .carousel {
     width: 80%;
-    /* Define a largura do slide - ajuste conforme necessário */
     max-width: 900px;
-    /* Limita a largura máxima */
     height: 500px;
-    /* Define uma altura fixa para o slide */
     margin: 20px auto;
-    /* Centraliza o slide e adiciona um espaçamento superior e inferior */
     overflow: hidden;
-    /* Oculta o conteúdo que ultrapassar as bordas */
     border-radius: 10px;
-    /* Borda arredondada para efeito estético */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para destacar o slide */
     border: 1px solid #ddd;
-    /* Borda para evidenciar as bordas */
-}
-
-
-/* Estilo para o contêiner principal */
-.container {
-    max-width: 1200px;
-    /* Largura máxima padrão para desktops */
-    margin: 0 auto;
-    /* Centraliza o contêiner */
-    padding: 0 20px;
-    /* Espaçamento interno nas laterais */
 }
 
 /* Ajuste para telas de 1920px ou maiores */
 @media (min-width: 1920px) {
     .container {
         max-width: 1400px;
-        /* Aumenta a largura máxima em telas grandes */
-
     }
 }
 
@@ -282,7 +197,6 @@ header {
 @media (max-width: 1280px) {
     .container {
         max-width: 95%;
-        /* Usa uma porcentagem para manter espaçamento nas laterais */
     }
 }
 
@@ -290,42 +204,43 @@ header {
 @media (max-width: 768px) {
     .container {
         max-width: 100%;
-        /* Usa toda a largura da tela */
         padding: 0 10px;
-        /* Reduz o espaçamento interno para telas pequenas */
+    }
+
+    .arte {
+        width: 120px;
+    }
+
+    .carousel {
+        max-height: 400px;
+    }
+
+    .carousel-item img {
+        height: 280px;
     }
 }
-
 .image-box {
     border: 2px solid #ccc;
-    /* Borda ao redor da caixa */
     padding: 15px;
     border-radius: 10px;
-    /* Bordas arredondadas */
     background-color: #9a9a9a;
-    /* Fundo branco dentro da caixa */
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra leve */
 }
 
 .card {
     transition: transform 0.2s ease-in-out;
-    /* Suavização ao passar o mouse */
     cursor: pointer;
-    /* Mudança de cursor para indicar clicável */
 }
 
 .card:active {
     transform: scale(0.95);
-    /* Suavização ao clicar */
 }
 
 .card:hover {
     transform: scale(1.03);
-    /* Suavização ao passar o mouse */
 }
 
 .footer {
@@ -345,4 +260,15 @@ header {
 .certificates img {
     width: 50px;
     height: auto;
+}
+
+header {
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0; /* Fixa no topo da tela */
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    background-color: #333; /* Cor de fundo da barra */
+    color: white;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
 }
